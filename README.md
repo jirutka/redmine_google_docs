@@ -17,7 +17,7 @@ The development of this module was sponsored by Evolving Web.
 Usage
 -----
 
-## Documents
+### Documents
 
 * `{{googledoc( document_key )}`
 * `{{googledoc( document_key, view)}}`

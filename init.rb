@@ -23,6 +23,9 @@ Redmine::WikiFormatting::Macros.register do
 
   desc = "Redmine Google Document Macro (googledoc)"
   macro :googledoc do |obj, args|
+    content_for :header_tags do
+      stylesheet_link_tag(:default, :plugin => 'google_docs')
+    end
     GoogleDocsMacros::DocumentMacro.get_document(obj, args)
   end
 end

@@ -34,7 +34,7 @@ class DocumentMacro
 	  else
 		url += "pub?id=#{doc_key}"
 	  end
-	  out = "<iframe src='#{url}' width='800px' height='600px'></iframe>"
+	  "<div class='googledoc'><iframe src='#{url}' width='100%' height='600px'></iframe></div>"
 	else
 	  raise "The Google document key must be alphanumeric."
 	end
